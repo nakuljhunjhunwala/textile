@@ -35,6 +35,10 @@ body a {
   background: #fff;
 }
 
+.product-image {
+  max-width: 300px;
+}
+
 span {
   font-weight: 700;
 }
@@ -527,9 +531,9 @@ i.mob {
   margin: 0 0 0.8em 3em;
   padding: 0;
 }
-.about-left ul li {
+/* .about-left ul li {
   display: block;
-}
+} */
 .about-left ul li a {
   font-size: 1.1em;
   color: #777;
@@ -625,6 +629,7 @@ i.mob {
   line-height: 1.8em;
   margin: 0.5em 0 0.8em 0;
   font-size: 1.1em;
+  max-width: 500px;
 }
 a.more-btn {
   background: #b6bf00;
