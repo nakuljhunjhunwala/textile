@@ -12,10 +12,20 @@ h3 {
   margin-top: 0;
 }
 
+.head-nav ul {
+  background: rgba(34, 34, 34, 0.61);
+}
+
 .logo {
-  height: 100px;
+  height: 150px;
+  margin: auto;
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
+
+.logo img {
+  height: 100%;
   width: auto;
-  margin-right: auto;
 }
 ul,
 ol {
@@ -37,7 +47,7 @@ body a {
   -ms-transition: 0.5s all;
 }
 .header-top {
-  padding: 1.2em 0em;
+  padding: 0em 0em;
   background: #fff;
 }
 
@@ -65,7 +75,7 @@ span {
 }
 .phone {
   float: left;
-  margin-top: 30px;
+  margin-top: 40px;
 }
 .logo {
   float: left;
@@ -74,7 +84,7 @@ span {
 }
 .location {
   float: right;
-  margin-top: 30px;
+  margin-top: 40px;
 }
 .header-top h3 {
   font-size: 1.2em;
@@ -87,6 +97,7 @@ span {
   padding: 2em 0em;
 }
 .head-nav ul {
+  background-color: #19b5fe;
   margin: 0;
   padding: 0;
 }
@@ -103,13 +114,13 @@ span {
   text-transform: uppercase;
   border: 2px solid rgba(255, 255, 255, 0);
 }
-.head-nav ul li a:hover,
+/* .head-nav ul li a:hover, */
 .head-nav ul li.active a {
-  border: 2px solid #000;
-  color: #000;
+  border: 2px solid white;
+  color: white;
 }
 .banner {
-  background: url(../images/banner.png) no-repeat center fixed;
+  /* background-image: url(../images/banner.png); */
   background-size: cover;
   -webkit-background-size: cover;
   -moz-background-size: cover;
@@ -118,9 +129,61 @@ span {
   min-height: 700px;
   text-align: left;
   background-color: rgba(0, 0, 0, 0.54);
+  animation: mymove 23s infinite;
+  animation-timing-function: linear;
+  -webkit-animation: mymove 23s infinite;
+  -webkit-animation-timing-function: linear;
 }
-.banner-cover {
-  /* background-image: url("../images/banner.png"); */
+/* .banner-cover {
+  background-image: url("../images/banner.png");
+} */
+
+@keyframes mymove {
+  0% {
+    background-image: url(../images/banner.png);
+  }
+  27% {
+    background-image: url(../images/banner.png);
+  }
+  33% {
+    background-image: url(../images/non-woven.jpg);
+  }
+  60% {
+    background-image: url(../images/non-woven.jpg);
+  }
+  66% {
+    background-image: url(../images/fiber.png);
+  }
+  94% {
+    background-image: url(../images/fiber.png);
+  }
+  100% {
+    background-image: url(../images/banner.png);
+  }
+}
+
+@-webkit-keyframes mymove {
+  0% {
+    background-image: url(../images/banner.png);
+  }
+  27% {
+    background-image: url(../images/banner.png);
+  }
+  33% {
+    background-image: url(../images/non-woven.jpg);
+  }
+  60% {
+    background-image: url(../images/non-woven.jpg);
+  }
+  66% {
+    background-image: url(../images/fiber.png);
+  }
+  94% {
+    background-image: url(../images/fiber.png);
+  }
+  100% {
+    background-image: url(../images/banner.png);
+  }
 }
 
 .banner-info {
@@ -537,13 +600,32 @@ i.mob {
   font-size: 2.7em;
   margin: 1em 0;
 }
+
+.about-left dl {
+  color: #777;
+  line-height: 1.5em;
+  font-size: 1.2em;
+  font-weight: 500;
+}
+
+.about-left dt {
+  color: rgb(66, 66, 66);
+}
+
 .about-left p {
   color: #777;
-  line-height: 1.8em;
-  font-size: 1.1em;
+  line-height: 1.7em;
+  font-size: 1.2em;
+  font-weight: 600;
 }
 .about-grids {
   padding: 1.5em 0;
+}
+.hasList {
+  color: #777;
+  line-height: 1.2em;
+  font-size: 1.2em;
+  font-weight: 500;
 }
 .about-left ul {
   margin: 0 0 0.8em 3em;
@@ -553,7 +635,7 @@ i.mob {
   display: block;
 } */
 .about-left ul li a {
-  font-size: 1.1em;
+  font-size: 1.2em;
   color: #777;
   text-decoration: none;
   padding: 0.3em 0;
@@ -1439,6 +1521,12 @@ ul.comment-list .desc {
 }
 /*--responsive design--*/
 @media (max-width: 768px) {
+  .logo {
+    height: 130px;
+    margin: auto;
+    margin-top: 15px;
+    margin-bottom: 15px;
+  }
   .head-nav ul li {
     display: block;
     float: none;
@@ -1701,6 +1789,12 @@ ul.comment-list .desc {
 }
 /*--responsive design--*/
 @media (max-width: 640px) {
+  .logo {
+    height: 110px;
+    margin: auto;
+    margin-top: 15px;
+    margin-bottom: 15px;
+  }
   .head-nav {
     float: none;
     padding: 0em;
@@ -1749,6 +1843,13 @@ ul.comment-list .desc {
   }
   .news h3 {
     font-size: 1.3em;
+  }
+  .product-more {
+    flex-direction: column;
+  }
+
+  .product-more div {
+    flex: 1;
   }
   .social {
     padding: 1.5em 1em;
@@ -1851,6 +1952,12 @@ ul.comment-list .desc {
 }
 /*--responsive design--*/
 @media (max-width: 480px) {
+  .logo {
+    height: 90px;
+    margin: auto;
+    margin-top: 15px;
+    margin-bottom: 15px;
+  }
   .logo {
     margin-left: 0em;
   }
