@@ -97,7 +97,7 @@ span {
   padding: 2em 0em;
 }
 .head-nav ul {
-  background-color: #19b5fe;
+  background-color: #666666;
   margin: 0;
   padding: 0;
 }
@@ -1320,13 +1320,14 @@ ul.comment-list .desc {
   width: 25%;
 }
 .company_address p {
-  color: #888;
+  color: rgb(87, 86, 86);
   font-size: 0.85em;
   padding: 5px 0;
+  font-weight: bold;
 }
 .company_address p span a {
   text-decoration: underline;
-  color: #ccc;
+  color: rgb(150, 150, 150);
 }
 .company_address p span a:hover {
   text-decoration: none;
@@ -1685,6 +1686,10 @@ ul.comment-list .desc {
   }
   .about-left ul {
     text-align: left;
+  }
+
+  .detail-ul li {
+    font-size: 40px;
   }
   .about-left {
     margin-top: 2em;
